@@ -1,13 +1,13 @@
-/* General styles - Adjusted for light background */
+
 :root {
-    --primary-color: #6a5acd; /* Purple */
-    --secondary-color: #4a3e8e; /* Darker Purple */
+    --primary-color: #6a5acd; 
+    --secondary-color: #4a3e8e; 
     --text-dark: #333;
     --text-light: #f8f8f8;
-    --bg-light: #f8f8f8; /* Light grey/off-white background */
-    --bg-card: #ffffff; /* White for cards/sections */
+    --bg-light: #f8f8f8; 
+    --bg-card: #ffffff; 
     --border-light: #eee;
-    --light-purple-bg: #e8e6fa; /* Very light purple for stats section */
+    --light-purple-bg: #e8e6fa; 
 }
 
 body {
@@ -32,9 +32,9 @@ body {
 
 /* Container for consistent content width */
 .container {
-    max-width: 1200px; /* কন্টেন্টের সর্বোচ্চ প্রস্থ */
-    margin: 0 auto;   /* কন্টেন্টকে মাঝখানে আনবে */
-    padding: 0 20px;  /* বাম ও ডানে 20px প্যাডিং দেবে ছোট স্ক্রিনের জন্য */
+    max-width: 1200px; 
+    margin: 0 auto;   
+    padding: 0 20px;  
 }
 
 /* Buttons */
@@ -66,15 +66,15 @@ body {
 }
 
 .secondary-button {
-    background-color: var(--primary-color); /* বাটনের ব্যাকগ্রাউন্ড কালার বেগুনি হবে */
-    color: white; /* বাটনের লেখার কালার সাদা হবে */
+    background-color: var(--primary-color); 
+    color: white; 
     border: 1px solid var(--primary-color);
     padding: 15px 30px;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: inline-block; /* text-decoration: none; removed as button not link */
+    display: inline-block; 
     margin-top: 20px;
 }
 
@@ -171,17 +171,17 @@ main section {
 
 /* Section See It in Action */
 .section-action {
-    background-color: var(--bg-card); /* White card background */
+    background-color: var(--bg-card); 
     border-radius: 12px;
     margin-top: 80px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     position: relative;
     z-index: 1;
-    /* এই সেকশনটি সরাসরি কন্টেইনারের ভেতরে থাকবে না, তাই এর নিজস্ব প্যাডিং প্রয়োজন */
-    margin: 80px auto; /* উপরে-নিচে মার্জিন, ডানে-বামে অটো মার্জিন */
-    max-width: 1200px; /* কন্টেইনারের সমান সর্বোচ্চ প্রস্থ */
-    padding: 40px; /* বক্সের ভেতরের কন্টেন্টের চারপাশে প্যাডিং */
-    box-sizing: border-box; /* padding সহ width ক্যালকুলেট করবে */
+   
+    margin: 80px auto; 
+    max-width: 1200px; 
+    padding: 40px; 
+    box-sizing: border-box; 
 }
 
 .action-content {
@@ -189,7 +189,7 @@ main section {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    /* এই কন্টেন্টটি এখন section-action এর নিজস্ব প্যাডিং পাবে */
+    
 }
 
 .action-text {
@@ -231,7 +231,7 @@ main section {
 .stats-content {
     background-color: var(--light-purple-bg);
     border-radius: 12px;
-    padding: 60px; /* চারপাশেই সমান প্যাডিং */
+    padding: 60px; 
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -349,11 +349,11 @@ main section {
     position: relative;
     z-index: 1;
     text-align: center;
-    /* এই সেকশনটি সরাসরি কন্টেইনারের ভেতরে থাকবে না, তাই এর নিজস্ব মার্জিন ও প্যাডিং প্রয়োজন */
-    margin: 80px auto; /* উপরে-নিচে মার্জিন, ডানে-বামে অটো মার্জিন */
-    max-width: 1200px; /* কন্টেইনারের সমান সর্বোচ্চ প্রস্থ */
-    padding: 60px; /* বক্সের ভেতরের কন্টেন্টের চারপাশে প্যাডিং */
-    box-sizing: border-box; /* padding সহ width ক্যালকুলেট করবে */
+    
+    margin: 80px auto; 
+    max-width: 1200px; 
+    padding: 60px;
+    box-sizing: border-box; 
 }
 
 .focus-content {
@@ -361,8 +361,7 @@ main section {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    /* এই কন্টেন্টটি এখন section-focus-better এর নিজস্ব প্যাডিং পাবে */
-    /* padding: 60px 20px; এই প্যাডিং focus-content থেকে সরিয়ে section-focus-better এ দিয়েছি */
+   
 }
 
 .focus-text {
@@ -396,7 +395,7 @@ main section {
 /* Section Contact */
 .section-contact {
     padding-bottom: 100px;
-    /* এই সেকশনটির কন্টেন্টও কন্টেইনারের ভেতরে, কিন্তু ফর্ম বক্সটিকে আলাদাভাবে মার্জিন/প্যাডিং দিতে হবে */
+   
 }
 
 .contact-content {
@@ -421,14 +420,13 @@ main section {
 .contact-form-wrapper {
     background-color: var(--bg-card);
     border-radius: 12px;
-    padding: 40px; /* ফর্ম বক্সের ভেতরের কন্টেন্টের চারপাশে প্যাডিং */
+    padding: 40px; 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     max-width: 500px;
     width: 100%;
     text-align: left;
     flex: 1;
-    box-sizing: border-box; /* padding সহ width ক্যালকুলেট করবে */
-}
+    box-sizing: border-box; 
 
 .contact-form label {
     display: block;
@@ -529,7 +527,7 @@ main section {
     /* .section-action and .section-focus-better adjustments for smaller screens */
     .section-action,
     .section-focus-better {
-        padding: 30px; /* Medium screen এর জন্য প্যাডিং কমানো */
+        padding: 30px; 
     }
 
     .action-content {
@@ -590,7 +588,7 @@ main section {
     }
 }
 
-@media (max-width: 768px) { /* Small screens / Mobile */
+@media (max-width: 768px) { 
     .navbar .nav-links {
         display: none;
         flex-direction: column;
@@ -635,8 +633,8 @@ main section {
     /* .section-action and .section-focus-better adjustments for small screens */
     .section-action,
     .section-focus-better {
-        margin: 60px auto; /* Mobile এর জন্য মার্জিন কমানো */
-        padding: 20px; /* মোবাইল এর জন্য প্যাডিং কমানো */
+        margin: 60px auto; 
+        padding: 20px; 
     }
 
     .action-text h2,
@@ -668,7 +666,7 @@ main section {
     }
 }
 
-@media (max-width: 480px) { /* Very small screens */
+@media (max-width: 480px) { 
     .container {
         padding: 0 15px;
     }
